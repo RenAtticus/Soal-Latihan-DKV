@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Soal DKV</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">latihan soal dkv</p>
+      <h1>soal pilihan ganda & essay</h1>
+      <p class="subtext">Versi web statis untuk belajar. Pilgan dinilai otomatis, essay dinilai pakai kata kunci dan sinonim. Karena jawaban manusia sering muter-muter dulu baru nyampe.</p>
+    </div>
+    <div class="score-card">
+      <div class="score-label">Skor</div>
+      <div id="scoreText" class="score-value">0 / 50</div>
+      <button id="gradeBtn" class="primary-btn">nilai jawaban</button>
+      <button id="resetBtn" class="secondary-btn">reset</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="section-head">
+        <h2>pilihan ganda</h2>
+        <p>40 soal sesuai naskah yang kamu kirim.</p>
+      </div>
+      <div id="mcqList" class="question-list"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>essay</h2>
+        <p>Nilai akan keluar kalau jawaban mengandung inti konsep yang benar.</p>
+      </div>
+      <div id="essayList" class="question-list essay-list"></div>
+    </section>
+
+    <section class="panel result-panel" id="resultPanel">
+      <div class="section-head">
+        <h2>hasil penilaian</h2>
+        <p>lihat skor dan pembahasan singkat di sini</p>
+      </div>
+      <div id="resultSummary" class="result-summary"></div>
+      <div id="feedbackList" class="feedback-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
